@@ -65,3 +65,8 @@ em {
 html{
   background: #fcfcfc;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
