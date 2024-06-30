@@ -8,7 +8,7 @@ function Heropage() {
         <div>cLub is A clUb</div>
         <div>tHat eVolves</div>
         <div>thRough hOw </div>
-        <div style={{ whiteSpace: "pre-wrap" }}>caN Be ( )</div>
+        <div style={{ whiteSpace: "pre-wrap" }}>caN Be (              )</div>
       </div>
     </div>
   );
