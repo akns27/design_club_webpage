@@ -200,7 +200,9 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 4rem;
+  cursor: pointer;
 }
+
 
 
 
@@ -249,4 +251,8 @@
   display: flex;
   justify-content: left;
   margin: 0 auto;
+}
+
+.blog_footer{
+  padding-top: 24rem;
 }

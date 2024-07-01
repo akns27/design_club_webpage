@@ -57,7 +57,7 @@ function Blogpage() {
           />
         ))}
       </div>
-      <div className="content">
+      <div className="blog_footer">
         <Footer />
       </div>
     </div>
