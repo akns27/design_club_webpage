@@ -43,11 +43,13 @@ function BlogPost3() {
         </div>
         <div className="texts-container">
           <div className="texts">
-            글 테스트 2 (반가워 새 동아리장이야 글로 가세요)
+            글 테스트 2 (반가워 새 동아리장이야 글로 가주세요)
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="blog_footer">
+        <Footer />
+      </div>
     </div>
   );
 }
