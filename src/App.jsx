@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import './font.css';
 import Mainpage from './pages/Mainpage';
 import Blogpage from './pages/Blogpage';
 import BlogPost1 from './pages/blogposts/BlogPost1';

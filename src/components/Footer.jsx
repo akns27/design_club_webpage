@@ -9,7 +9,9 @@ function Footer() {
       <div className="footer_title left-text">1393, garak-daero,</div>
       <div className="footer_title right-text">gangseo-gu.</div>
       <div className="footer-copyright left-text">
-      ⓒbssm design club all rights reserved
+      <div>
+        ⓒbssm design club all rights reserved
+      </div>
     </div>
     </div>
   );
