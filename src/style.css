@@ -260,6 +260,10 @@
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:1023px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .hero_container {
     padding-left: 4rem;
     margin-top: 3.5rem;
