@@ -11,9 +11,12 @@ How Can Be ()
 2024.06.15 ~ 2024.07.03
 
 ### 👬 팀 구성
+## 멤버
+|<img src="https://avatars.githubusercontent.com/u/128371415?v=4"  width="130"/>|<img src="https://avatars.githubusercontent.com/u/97615164?v=4"  width="130"/>|
+|:-:|:-:|
+|[이재현](https://github.com/ljhy07)|[박강원](https://github.com/akns27)|
+| 배포 및 오류 점검, 개발 | 디자인, 전반적인 개발 |
 
-- 박강원(디자인, 전반적인 개발)
-- 이재현(배포 및 오류 점검, 개발)
 
 ### 🛠️ 사용 기술
 
@@ -29,7 +32,7 @@ How Can Be ()
 
 ### 📺 시연영상 & 발표자료
 
-[시연영상](http://naver.me/5YFuPlt1)
+[시연영상](http://naver.me/5YFuPlt1)<br/>
 [발표자료](http://naver.me/GL8fvkkj)
 
 ## 🔎 페이지 살펴보기
@@ -62,4 +65,6 @@ How Can Be ()
 - 글을 등록, 수정, 삭제할 수 있는 페이지도 만들어 백엔드 연동
 - 부족한 페이지 내용 보충
 
-궁극적인 계획 : 실제로 디자인 동아리가 사용할 수 있도록 유지 보수하여 계승할 계획이 있습니다.
+궁극적인 계획 : 실제로 디자인 동아리가 사용할 수 있도록 유지 보수하며 계승할 계획이 있습니다.
+
+
