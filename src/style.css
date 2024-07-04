@@ -259,11 +259,7 @@
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:1023px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
+@media screen and (max-width:1279px) {
   .hero_container {
     padding-left: 4rem;
     margin-top: 3.5rem;
@@ -271,28 +267,26 @@
   }
   .hero_text {
     color: var(--primary, #307dd8);
-    font-size: 11.25rem;
+    font-size: 6rem;
     font-style: normal;
     line-height: 100%;
     letter-spacing: 0.225rem;
   }
   
   .main_container {
-    width: 100vw;
+    width: 100%;
     font-family: "Dirtyline 36Daysoftype 2022";
   }
   
   .solidarity_img {
-    padding-left: 60rem;
-    padding-top: 7.69rem;
+    padding: 5rem 0 0 45%;
   }
   
   .sprit_text_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 9.44rem;
-    padding-top: 12rem;
+    padding: 5rem 0 0 2rem;
   }
   
   .sprit_title {
@@ -317,7 +311,7 @@
   
   .footer_title {
     color: var(--primary, #307dd8);
-    font-size: 7.5rem;
+    font-size: 6rem;
     font-weight: 400;
     line-height: 110%;
     letter-spacing: 0.15rem;
@@ -326,7 +320,7 @@
   .footer_copyrights {
     color: var(--primary, #307dd8);
     font-family: "Goblin One";
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 140%; /* 2.45rem */
     letter-spacing: 0.035rem;
@@ -459,7 +453,7 @@
   
   .blog_container {
     display: flex;
-    width: 82rem;
+    width: 41rem;
     align-items: flex-start;
     align-content: flex-start;
     gap: 2.5rem 0rem;
@@ -473,16 +467,19 @@
   
   
   .blogpost_header {
+    width: 45rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 4.9375rem 48.25rem 4.9375rem 9.9375rem;
+    margin: auto;
+    padding: 0 0 0 0;
     gap: 0.5rem;
   }
   
   .blogpost_caption {
+    width: 10rem;
     color: #000;
-    text-align: center;
+    text-align: left;
     font-family: SUIT;
     font-size: 1rem;
     font-weight: 600;
@@ -492,7 +489,7 @@
   
   .blogpost_title {
     color: #000;
-    width: 70rem;
+    width: 40rem;
     text-align: left;
     font-family: SUIT;
     font-size: 3.5rem;
@@ -513,7 +510,7 @@
   }
   
   .texts-container{
-    width: 87rem;
+    width: 45rem;
     display: flex;
     justify-content: left;
     margin: 0 auto;
@@ -526,42 +523,44 @@
 
 /*-------------------------------------------------------------------------------------------------------------------*/
   
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .hero_container {
-    padding-left: 4rem;
+    padding-left: 1.5rem;
     margin-top: 3.5rem;
     z-index: 5;
   }
   .hero_text {
     color: var(--primary, #307dd8);
-    font-size: 11.25rem;
+    font-size: 4.6rem;
     font-style: normal;
     line-height: 100%;
     letter-spacing: 0.225rem;
   }
   
   .main_container {
-    width: 100vw;
+    width: 100%;
     font-family: "Dirtyline 36Daysoftype 2022";
   }
   
   .solidarity_img {
-    padding-left: 60rem;
-    padding-top: 7.69rem;
+    padding: 5rem 0 0 30%;
+  }
+
+  .solidarity_img img {
+    width: 15rem;
+    height: 15rem;
   }
   
   .sprit_text_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 9.44rem;
-    padding-top: 12rem;
   }
   
   .sprit_title {
     color: var(--primary, #307dd8);
     font-family: "Goblin One";
-    font-size: 3.75rem;
+    font-size: 1.5rem;
   
     font-weight: 400;
     line-height: 160%; /* 6rem */
@@ -580,7 +579,7 @@
   
   .footer_title {
     color: var(--primary, #307dd8);
-    font-size: 7.5rem;
+    font-size: 2.75rem;
     font-weight: 400;
     line-height: 110%;
     letter-spacing: 0.15rem;
@@ -589,7 +588,7 @@
   .footer_copyrights {
     color: var(--primary, #307dd8);
     font-family: "Goblin One";
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 140%; /* 2.45rem */
     letter-spacing: 0.035rem;
@@ -629,6 +628,11 @@
     cursor: pointer;
   }
   
+  .floating_btn img {
+    width: 5rem;
+    height: 5rem;
+  }
+
   .dim_container {
     position: fixed;
     top: 0;
@@ -650,7 +654,7 @@
   .dim_title {
     text-align: center;
     font-family: "Goblin One";
-    font-size: 4rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 6.4rem */
