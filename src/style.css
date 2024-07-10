@@ -531,7 +531,7 @@
   }
   .hero_text {
     color: var(--primary, #307dd8);
-    font-size: 4.6rem;
+    font-size: 2rem;
     font-style: normal;
     line-height: 100%;
     letter-spacing: 0.225rem;
@@ -704,6 +704,7 @@
     align-items: flex-start;
     gap: 1rem;
     font-family: SUIT;
+    margin: auto;
   }
   
   .date {
@@ -726,7 +727,7 @@
   
   .blog_container {
     display: flex;
-    width: 82rem;
+    width: 25rem;
     align-items: flex-start;
     align-content: flex-start;
     gap: 2.5rem 0rem;
