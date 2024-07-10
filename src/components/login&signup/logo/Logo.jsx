@@ -2,9 +2,9 @@ import "./logo.css";
 
 function Logo(){
     return (
-        <div id="logo">
-            hOw caN 
-            Be (      )
+        <div id="Logo">
+            <p>hOw caN</p>
+            <p>Be (&ensp;&ensp;&ensp;)</p>
         </div>
     );
 }

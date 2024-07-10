@@ -1,7 +1,9 @@
-function Input(){
+import './Input.css';
+
+function Input({ placeholder }){
     return (
-        <div>
-            <input />
+        <div id="input">
+            <input placeholder={placeholder} />
         </div>
     );
 }
