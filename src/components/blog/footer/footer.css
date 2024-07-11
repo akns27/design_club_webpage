@@ -4,11 +4,11 @@
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: calc(100vw - 8rem);
     height: 4rem;
-
+    
     gap: 1.25rem;
 
     display: flex;
