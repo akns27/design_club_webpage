@@ -1,0 +1,62 @@
+#workbar {
+    display: flex;
+    width: 100vw;
+    padding: 1rem 0rem;
+    justify-content: center;
+    align-items: center;
+
+    height: 2rem;
+
+    border-bottom: 1px solid var(--gray-300, #CCC);
+}
+
+#workbar .itemBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#workbar .picture {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#workbar .fontsizeBox {
+    display: flex;
+    gap: 1rem;
+    color: var(--gray-600, #848484);
+
+    /* text/2 */
+    font-family: SUIT;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 1.6rem */
+    letter-spacing: -0.03rem;
+}
+
+#workbar .fontsizeBox p {
+    width: 1.75rem;
+}
+
+#workbar .fonteditBox {
+    width: 4rem;
+    height: 2rem;
+    
+    display: flex;
+    gap: 0.5rem;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#workbar .fonteditBox .bold {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#workbar .fonteditBox .underline {
+    width: 1.75rem;
+    height: 1.75rem;
+}

@@ -42,7 +42,7 @@ function Blogpage() {
 
   return (
     <div className="main_container">
-      <PageChangeDim isDimmed={isDimmed} toggleDim={toggleDim} />
+      <PageChangeDim isDimmed={isDimmed} toggleDim={toggleDim} isLogin={false} />
       <div onClick={toggleDim} className="floating_btn">
         <img src="https://raw.githubusercontent.com/react-team-project-kangwon-ljhy/RTP-client/f0f8dbfbf6cad06d7fdaaff23f697e18fd6f85c9/public/%ED%94%8C%EB%A1%9C%ED%8C%85%20%EB%B2%84%ED%8A%BC.svg" alt="플로팅 버튼" style={{paddingTop: '3rem'}}/>
       </div>
