@@ -2,46 +2,48 @@ import './blogwrite.css';
 import Footer from "../../components/blog/footer/Footer";
 import Header from '../../components/blog/header/Header';
 import WorkBar from '../../components/blog/workbar/WorkBar';
-import { useState, useEffect, useRef } from 'react';
+import React from "react";
+import { useState, useEffect, useRef, useCallback } from 'react';
+import "@toast-ui/editor/dist/toastui-editor.css";
+import "@toast-ui/editor/dist/theme/toastui-editor-dark.css";
+import { Editor } from "@toast-ui/react-editor";
 
 function BlogWrite(){
-    const [value, setValue] = useState('');
-    const textareaRef = useRef(null);
-    const [contentsHeight, setContentsHeight] = useState(40);
+    const [contents, setContents] = useState('');
+    const contentsRef = useRef(null);
 
-    useEffect(() => {
-        const textarea = textareaRef.current;
-        textarea.style.height = '40rem'
-    }, []);
-
-    useEffect(() => {
-        const textarea = textareaRef.current;
-        
-        if (countNewlines(value) >= 20){
-            setContentsHeight(contentsHeight + 1.25);
-            textarea.style.height = `${contentsHeight}rem`;
-        } else if (countNewlines(value) < 20) {
-            setContentsHeight(40);
-            textarea.style.height = `${contentsHeight}rem`;
-        }
-    }, [value]);
-
-    const countNewlines = (str) => {
-        return (str.match(/\n/g) || []).length; // 개행 문자(\n)의 개수를 세어줍니다.
-    };
-
-    const handleChange = (event) => {
-        setValue(event.target.value);
+    const handleChange = () => {
+        const editorHtml = contentsRef.current.getInstance().getHTML();
+        setContents(editorHtml);
     };
 
     return (
         <div id='blogwrite'>
             <Header type="write" />
-            <WorkBar />
+            {/* <WorkBar /> */}
             <section>
                 <input className='title' placeholder='제목을 입력해주세요' />
                 {/* <input className='contents' placeholder='내용을 입력해주세요' /> */}
-                <textarea ref={textareaRef} value={value} onChange={handleChange} className='contents' placeholder='내용을 입력해주세요'></textarea>
+                <div className='container'>
+                    <Editor
+                        // className="contents"
+                        ref={contentsRef}
+                        placeholder="내용을 입력해주세요"
+                        height='45rem'
+                        previewStyle={window.innerWidth > 1000 ? "vertical" : "tab"}
+                        initialEditType="markdown"
+                        hideModeSwitch={true}
+                        toolbarItems={[
+                        ["heading", "bold"],
+                        ['ul', 'ol', 'task'],
+                        ["hr", "quote"],
+                        ["table", "image", "link"],
+                        ]}
+                        theme="white"
+                        usageStatistics={false}
+                        onChange={handleChange}
+                    />
+                </div>
             </section>
             <Footer />
         </div>

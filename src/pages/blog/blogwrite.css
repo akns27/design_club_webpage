@@ -49,18 +49,16 @@
     letter-spacing: -0.105rem;
 }
 
-#blogwrite section .contents {
-    width: 82rem;
-    min-height: 40rem;
 
+#blogwrite section .container .contents {
+    width: 100%;
     color: var(--gray-300, #000);
 
-    /* text/1 */
     font-family: SUIT;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 2rem */
+    line-height: 160%; 
     letter-spacing: 0.0125rem;
     word-wrap: break-word;
 
@@ -69,14 +67,24 @@
     resize: none;
 }
 
-#blogwrite section .contents::placeholder {
+#blogwrite section .container *::placeholder {
     color: var(--gray-300, #CCC);
 
-    /* text/1 */
     font-family: SUIT;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 2rem */
+    line-height: 160%;
     letter-spacing: 0.0125rem;
+}
+
+#blogwrite section .container {
+    margin: auto;
+    width: 82rem;
+    height: fit-content;
+    padding: 0.5rem 0rem;
+
+    display: flex;
+    background-color: white;
+    flex-direction: column;
 }
