@@ -1,0 +1,90 @@
+#blogwrite {
+    width: 100vw;
+    height: fit-content;
+    padding: 0 0 5rem 0;
+}
+
+#blogwrite section {
+    padding: 2rem 0;
+    gap: 1rem;
+    z-index: 0;
+
+    width: 100vw;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#blogwrite section .title {
+    width: 82rem;
+    height: 4.5rem;
+
+    color: var(--gray-300, #000);
+
+    /* title/h1 */
+    font-family: SUIT;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 4.2rem */
+    letter-spacing: -0.105rem;
+    word-wrap: break-word;
+
+    border: none;
+    outline: none;
+}
+
+#blogwrite section .title::placeholder {
+    color: var(--gray-300, #CCC);
+
+    /* title/h1 */
+    font-family: SUIT;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 4.2rem */
+    letter-spacing: -0.105rem;
+}
+
+
+#blogwrite section .container .contents {
+    width: 100%;
+    color: var(--gray-300, #000);
+
+    font-family: SUIT;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+    letter-spacing: 0.0125rem;
+    word-wrap: break-word;
+
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#blogwrite section .container *::placeholder {
+    color: var(--gray-300, #CCC);
+
+    font-family: SUIT;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.0125rem;
+}
+
+#blogwrite section .container {
+    margin: auto;
+    width: 82rem;
+    height: fit-content;
+    padding: 0.5rem 0rem;
+
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
