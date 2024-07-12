@@ -18,11 +18,8 @@ function App() {
         <Route path="/" element={<Mainpage />} />
         <Route path="/about" element={<Mainpage />} />
         <Route path="/blog" element={<Blogpage />} />
-        <Route path="/blog/1" element={<BlogPost1 />} />
-        <Route path="/blog/2" element={<BlogPost2 />} />
-        <Route path="/blog/3" element={<BlogPost3 />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
-        <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/blog/:uerid/:blogid" element={<BlogPost />} />
+        <Route path="/profile/:userid" element={<Profile />} />
         <Route path="/blog/write" element={<BlogWrite />} />
       </Routes>
     </Router>

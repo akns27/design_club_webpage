@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import "../style.css";
 
-function PageChangeDim({ isDimmed, toggleDim, isLogin }) {
+function PageChangeDim({ isDimmed, toggleDim, isLogin, userId }) {
   const navigate = useNavigate();
 
   if (!isDimmed) return null;
@@ -15,7 +15,7 @@ function PageChangeDim({ isDimmed, toggleDim, isLogin }) {
     <div className="dim_container">
       <div className="dim_title" onClick={() => handleNavigation('/about')}>About us</div>
       <div className="dim_title" onClick={() => handleNavigation('/blog')}>Blog</div>
-      <div className="dim_title" onClick={() => handleNavigation('/profile')}>Profile</div>
+      <div className="dim_title" onClick={() => handleNavigation(`/profile/${userId}`)}>Profile</div>
       {
         isLogin ? (
             <div className="dim_title" onClick={() => handleNavigation('/logout')}>Logout</div>
