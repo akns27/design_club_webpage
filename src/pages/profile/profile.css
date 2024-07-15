@@ -1,0 +1,47 @@
+#profile {
+    width: 100vw;
+    height: 100vh;
+}
+
+#profile section {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+#profile section .blogContainer {
+    display: flex;
+    width: 82rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2.5rem 0rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 4rem;
+    cursor: pointer;
+}
+
+#profile section .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#profile section .info .picture {
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 62.4375rem;
+}
+
+#profile section .info .name {
+    color: #000;
+    text-align: center;
+    font-family: SUIT;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3rem */
+    letter-spacing: -0.025rem;
+}

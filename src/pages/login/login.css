@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#login {
+    /* margin: auto; */
+    /* padding: auto; */
+
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+}
+
+#login .frm {
+    margin: auto;
+    padding: 5rem;
+
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+#login .frm p {
+    color: #000;
+
+    margin: 0 0 1.5rem 0;
+
+    /* text/3 */
+    font-family: SUIT;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 2rem */
+    letter-spacing: 0.0125rem;
+}
+
+#login .frm .inputBox {
+    margin: 0 0 1.5rem 0;
+}
+
+#login .frm .inputBox .pwd {
+    margin: 0.75rem 0 2rem 0;
+}
+
+#login .frm .signup {
+    padding: 0.5rem;
+
+    color: var(--gray-600, #848484);
+    text-align: center;
+
+    /* caption */
+    font-family: SUIT;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 0.9rem */
+    letter-spacing: 0.015rem;
+}

@@ -41,7 +41,7 @@
 
 .spirt_description {
   color: var(--primary, #307dd8);
-  font-family: "SUIT";
+  font-family: SUIT;
   font-size: 2rem;
 
   font-weight: 700;
@@ -72,12 +72,12 @@
 }
 
 .right-text {
-  float: right;
+  text-align: right;
   padding-right: 4.06rem;
 }
 
 .left-text {
-  float: left;
+  text-align: left;
   padding-left: 4.06rem;
 }
 
@@ -255,4 +255,539 @@
 
 .blog_footer{
   padding-top: 24rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1279px) {
+  .hero_container {
+    padding-left: 4rem;
+    margin-top: 3.5rem;
+    z-index: 5;
+  }
+  .hero_text {
+    color: var(--primary, #307dd8);
+    font-size: 6rem;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.225rem;
+  }
+  
+  .main_container {
+    width: 100%;
+    font-family: "Dirtyline 36Daysoftype 2022";
+  }
+  
+  .solidarity_img {
+    padding: 5rem 0 0 45%;
+  }
+  
+  .sprit_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 0 0 2rem;
+  }
+  
+  .sprit_title {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 3.75rem;
+  
+    font-weight: 400;
+    line-height: 160%; /* 6rem */
+    letter-spacing: 0.075rem;
+  }
+  
+  .spirt_description {
+    color: var(--primary, #307dd8);
+    font-family: SUIT;
+    font-size: 2rem;
+  
+    font-weight: 700;
+    line-height: 160%; /* 3.2rem */
+    letter-spacing: 0.04rem;
+  }
+  
+  .footer_title {
+    color: var(--primary, #307dd8);
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.15rem;
+  }
+  
+  .footer_copyrights {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: 0.035rem;
+  }
+  
+  .footer_container {
+    width: 100%;
+    padding-top: 12rem;
+  }
+  
+  .right-text {
+    text-align: right;
+    padding-right: 4.06rem;
+  }
+  
+  .left-text {
+    text-align: left;
+    padding-left: 4.06rem;
+  }
+  
+  .footer-copyright {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: 0.035rem;
+    padding-top: 3.06rem;
+    padding-bottom: 5.06rem;
+  }
+  
+  .floating_btn {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .dim_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.5);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    color: #fff;
+    clear: both;
+    z-index: 50;
+  }
+  
+  .dim_title {
+    text-align: center;
+    font-family: "Goblin One";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 6.4rem */
+    letter-spacing: -0.08rem;
+  }
+  
+  .dim_title:hover {
+    color: #307dd8;
+    cursor: pointer;
+  }
+  
+  .dim_text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .dim_container {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .Thumbnail_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .thumbnail_image {
+    width: 20.5rem;
+    height: 21.75rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+  
+  .blogthumbnail_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-family: SUIT;
+  }
+  
+  .date {
+    color: #848484;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.9rem; /* 120% */
+    letter-spacing: 0.015rem;
+  }
+  
+  .blog_title {
+    width: 19.375rem;
+    height: 2.4375rem;
+    color: #303030;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem; /* 120% */
+    letter-spacing: -0.003rem;
+  }
+  
+  .blog_container {
+    display: flex;
+    width: 41rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2.5rem 0rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 4rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .blogpost_header {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 0 0 0 0;
+    gap: 0.5rem;
+  }
+  
+  .blogpost_caption {
+    width: 10rem;
+    color: #000;
+    text-align: left;
+    font-family: SUIT;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 160%; /* 1.6rem */
+    letter-spacing: -0.03rem;
+  }
+  
+  .blogpost_title {
+    color: #000;
+    width: 40rem;
+    text-align: left;
+    font-family: SUIT;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    letter-spacing: -0.105rem;
+  }
+  
+  .texts {
+    color: #000;
+    font-family: SUIT;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.0125rem;
+  }
+  
+  .texts-container{
+    width: 45rem;
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+  }
+  
+  .blog_footer{
+    padding-top: 24rem;
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+  
+@media screen and (max-width:768px) {
+  .hero_container {
+    padding-left: 1.5rem;
+    margin-top: 3.5rem;
+    z-index: 5;
+  }
+  .hero_text {
+    color: var(--primary, #307dd8);
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.225rem;
+  }
+  
+  .main_container {
+    width: 100%;
+    font-family: "Dirtyline 36Daysoftype 2022";
+  }
+  
+  .solidarity_img {
+    padding: 5rem 0 0 30%;
+  }
+
+  .solidarity_img img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .sprit_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sprit_title {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 1.5rem;
+  
+    font-weight: 400;
+    line-height: 160%; /* 6rem */
+    letter-spacing: 0.075rem;
+  }
+  
+  .spirt_description {
+    color: var(--primary, #307dd8);
+    font-family: SUIT;
+    font-size: 2rem;
+  
+    font-weight: 700;
+    line-height: 160%; /* 3.2rem */
+    letter-spacing: 0.04rem;
+  }
+  
+  .footer_title {
+    color: var(--primary, #307dd8);
+    font-size: 2.75rem;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.15rem;
+  }
+  
+  .footer_copyrights {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: 0.035rem;
+  }
+  
+  .footer_container {
+    width: 100%;
+    padding-top: 12rem;
+  }
+  
+  .right-text {
+    text-align: right;
+    padding-right: 4.06rem;
+  }
+  
+  .left-text {
+    text-align: left;
+    padding-left: 4.06rem;
+  }
+  
+  .footer-copyright {
+    color: var(--primary, #307dd8);
+    font-family: "Goblin One";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: 0.035rem;
+    padding-top: 3.06rem;
+    padding-bottom: 5.06rem;
+  }
+  
+  .floating_btn {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .floating_btn img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .dim_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.5);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    color: #fff;
+    clear: both;
+    z-index: 50;
+  }
+  
+  .dim_title {
+    text-align: center;
+    font-family: "Goblin One";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 6.4rem */
+    letter-spacing: -0.08rem;
+  }
+  
+  .dim_title:hover {
+    color: #307dd8;
+    cursor: pointer;
+  }
+  
+  .dim_text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .dim_container {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .Thumbnail_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .thumbnail_image {
+    width: 20.5rem;
+    height: 21.75rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+  
+  .blogthumbnail_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-family: SUIT;
+    margin: auto;
+  }
+  
+  .date {
+    color: #848484;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.9rem; /* 120% */
+    letter-spacing: 0.015rem;
+  }
+  
+  .blog_title {
+    width: 19.375rem;
+    height: 2.4375rem;
+    color: #303030;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem; /* 120% */
+    letter-spacing: -0.003rem;
+  }
+  
+  .blog_container {
+    display: flex;
+    width: 25rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2.5rem 0rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 4rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .blogpost_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4.9375rem 48.25rem 4.9375rem 9.9375rem;
+    gap: 0.5rem;
+  }
+  
+  .blogpost_caption {
+    color: #000;
+    text-align: center;
+    font-family: SUIT;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 160%; /* 1.6rem */
+    letter-spacing: -0.03rem;
+  }
+  
+  .blogpost_title {
+    color: #000;
+    width: 70rem;
+    text-align: left;
+    font-family: SUIT;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    letter-spacing: -0.105rem;
+  }
+  
+  .texts {
+    color: #000;
+    font-family: SUIT;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.0125rem;
+  }
+  
+  .texts-container{
+    width: 87rem;
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+  }
+  
+  .blog_footer{
+    padding-top: 24rem;
+  }
 }

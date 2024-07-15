@@ -1,0 +1,19 @@
+#Logo {
+    width: 45rem;
+
+    padding: 5rem;
+    margin: auto;
+
+    /* display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center; */
+
+    color: var(--primary, #307DD8);
+    font-family: "Dirtyline 36daysoftype 2022";
+    font-size: 11.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 11.25rem */
+    letter-spacing: 0.225rem;
+}
