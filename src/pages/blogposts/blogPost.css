@@ -73,7 +73,7 @@
 }
   
 .texts-container{
-    width: 87rem;
+    width: 85%;
     display: flex;
     justify-content: left;
     margin: 0 auto;
@@ -81,4 +81,25 @@
   
 .blog_footer{
     padding-top: 24rem;
+}
+
+.toastui-editor-contents p,
+.toastui-editor-contents h1,
+.toastui-editor-contents h2,
+.toastui-editor-contents h3,
+.toastui-editor-contents h4,
+.toastui-editor-contents h5,
+.toastui-editor-contents h6,
+.toastui-editor-contents ul,
+.toastui-editor-contents li,
+.toastui-editor-contents pre,
+.toastui-editor-contents table {
+    color: var(--gray-300, #000) !important;
+
+    font-family: SUIT !important;
+    font-size: 1.25rem;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 160% !important;
+    letter-spacing: 0.0125rem !important;
 }

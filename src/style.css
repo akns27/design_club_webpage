@@ -41,7 +41,7 @@
 
 .spirt_description {
   color: var(--primary, #307dd8);
-  font-family: "SUIT";
+  font-family: SUIT;
   font-size: 2rem;
 
   font-weight: 700;
@@ -301,7 +301,7 @@
   
   .spirt_description {
     color: var(--primary, #307dd8);
-    font-family: "SUIT";
+    font-family: SUIT;
     font-size: 2rem;
   
     font-weight: 700;
@@ -569,7 +569,7 @@
   
   .spirt_description {
     color: var(--primary, #307dd8);
-    font-family: "SUIT";
+    font-family: SUIT;
     font-size: 2rem;
   
     font-weight: 700;

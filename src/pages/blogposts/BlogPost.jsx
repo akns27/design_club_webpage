@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Footer from "../../components/Footer";
 import PageChangeDim from "../../components/PageChangeDim";
 import { useParams } from 'react-router-dom';
+import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import { Viewer } from '@toast-ui/react-editor';
 
 function BlogPost({ blog }){
   const [isDimmed, setIsDimmed] = useState(false);
@@ -11,10 +13,6 @@ function BlogPost({ blog }){
   const toggleDim = () => {
     setIsDimmed(!isDimmed);
   };
-
-  useEffect(() => {
-    console.log(id)
-  }, [])
 
   useEffect(() => {
     if (isDimmed) {
@@ -43,14 +41,17 @@ function BlogPost({ blog }){
         <div className="blogpost_header">
           <div className="blogpost_caption">Log</div>
           <div className="blogpost_title">
-            {blog[id].title}
+            {blog.title}
           </div>
-          <div className="blogpost_caption">Writer : {blog[id].writer}</div>
+          <div className="blogpost_caption">
+            Writer : {blog.writer}
+          </div>
         </div>
         <div className="texts-container">
-          <div className="texts">
-            {blog[id].contents}
-          </div>
+          <Viewer
+          width="100%"
+          initialValue={blog.contents}
+          />
         </div>
       </div>
       <div className="blog_footer">
